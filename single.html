@@ -1,0 +1,173 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>RaSh Cars And Bikes</title>
+<script language="JavaScript" >
+
+function getSubmit(){
+var xmlhttp;
+xmlhttp = new XMLHttpRequest();
+xmlhttp.open("GET","insert2.php?name="+document.getElementById("name").value+"&mail="+document.getElementById("mail").value+"&phone="+document.getElementById("phone").value,false);
+xmlhttp.send(null);
+}
+</script>
+
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".dropdown img.flag").addClass("flagvisibility");
+
+            $(".dropdown dt a").click(function() {
+                $(".dropdown dd ul").toggle();
+            });
+                        
+            $(".dropdown dd ul li a").click(function() {
+                var text = $(this).html();
+                $(".dropdown dt a span").html(text);
+                $(".dropdown dd ul").hide();
+                $("#result").html("Selected value is: " + getSelectedValue("sample"));
+            });
+                        
+            function getSelectedValue(id) {
+                return $("#" + id).find("dt a span.value").html();
+            }
+
+            $(document).bind('click', function(e) {
+                var $clicked = $(e.target);
+                if (! $clicked.parents().hasClass("dropdown"))
+                    $(".dropdown dd ul").hide();
+            });
+
+
+            $("#flagSwitcher").click(function() {
+                $(".dropdown img.flag").toggleClass("flagvisibility");
+            });
+        });
+    </script>
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script> 
+<link rel="stylesheet" href="css/global.css">
+<script src="js/slides.min.jquery.js"></script>
+   <script>
+		$(function(){
+			$('#products').slides({
+				preload: true,
+				preloadImage: 'img/loading.gif',
+				effect: 'slide, fade',
+				crossfade: true,
+				slideSpeed: 350,
+				fadeSpeed: 500,
+				generateNextPrev: true,
+				generatePagination: false
+			});
+		});
+	</script>
+</head>
+<body>
+<div class="header"><img src="images/rash.jpg" alt="" class="header-para"/>	
+<div class="wrap"> 
+	<div class="header-bot">
+		 <div class="logo">
+			 <a href="index.html"></a>
+		 </div>
+		 <div class="cart">
+			<ul class="ph-no">
+				<li class="item  first_item">
+					<div class="item_html"><span class="text1">Order delivery:<br>
+					</span> <span class="text2">+911-9844675239</span></div>
+				</li>
+			</ul>
+			<div id="top-search">
+                <form method="get" action="http://livedemo00.template-help.com/jigoshop_45422/">
+</form>
+            </div>
+		    <div class="menu-main">
+			   <ul class="dc_css3_menu">
+					 <li class="active"><a href="index.html">Home</a></li>
+					 <li><a href="about.html">About</a></li>
+					 <li></li>
+					 <li><a href="contact.html">Contact</a></li>
+		     	</ul>
+			 <div class="clear"></div>
+			</div>				
+		</div>	
+		<div class="clear"></div> 
+	   </div>
+	  </div>	
+</div>
+<div class="header-bottom">
+	<div class="wrap">
+		<div class="single">
+				<div class="box_wrapper">
+				  <h1>Maruti Suzuki Alto K10</h1>
+				</div>
+				    <div class="single-top"><img src="images/pic.jpeg" alt="" width="650" height="270"/> 	
+		  				<div class="lsidebar span_1_of_s">
+					   		<div id="container">
+						   	  <div id="products_example">
+							   <div id="products"> </div>
+						</div>
+					   </div>
+					</div>
+					  <div class="grid span_2_of_3">
+					    <h3 class="about-para">The dominant car manufacturer in this price range is Maruti Suzuki, with quite a few cars in its line-up. </h3>
+					    <h3 class="about-para">The Alto K10 was first launched in 2010, and it finally received an update last year, which included a host of exterior and interior changes. </h3>
+					    <h3 class="about-para">The new model gets a chrome front grille, revised head- &amp; tail-lamps, newly designed bumpers, 13-inch wheels along with a few more changes.</h3>
+					    <h3 class="about-para">The cabin too looks completely new because of the dual-tone dashboard, new upholstery and control buttons. Under the hood is a 998cc K10 engine which churns out 67bhp. </h3>
+					    <h3 class="about-para">However, the biggest change in the car has been that it's now available with the Auto Gear Shift - which is the same as the one found on the Celerio - and it is fuel efficient too. </h3>
+					    <h3 class="about-para">Maruti claims that the K10 with the AGS returns an impressive 24.07Km/l of mileage. Furthermore, the Alto K10 is also offered with CNG.</h3>
+					  </div><div class="clear"></div> 
+					</div>
+<div class="clear"></div>
+<div class="team">
+  <div class="leave-comment"><a href="#" name="comment">Get The Car</a></div>
+						<div class="comments-area">
+							<form>
+								<p>
+									<label>Name</label>
+									<span></span>
+									<input type="text" name="name1" id="name"/><br><br>
+  
+								</p>
+								<p>
+									<label>Email</label>
+									<span></span>
+									<input type="text" name="mail1" id="mail"/><br><br>
+  
+								</p>
+								<p>
+								  <label>Phone Number</label>
+								  <input type="text" name="phone1" id="phone"/><br><br>
+  
+								</p>
+								<p>
+								  <label>Address</label>
+								  <span>*</span>
+									<textarea></textarea>
+								</p>
+								<p>
+									<input type="submit" value="BUY" onclick="getSubmit();" />
+								</p>
+							</form>
+					</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="footer">
+	<div class="wrap">
+	   <div class="footer-top">
+<div class="col_1_of_5 span_1_of_5"> </div>
+				<div class="clear"></div>
+	  </div>
+	</div>
+</div>
+</body>
+</html>
+
+    	
+    	
+            
